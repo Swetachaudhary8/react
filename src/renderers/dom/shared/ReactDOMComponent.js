@@ -402,6 +402,21 @@ var hasOwnProperty = {}.hasOwnProperty;
 
 function validateDangerousTag(tag) {
   if (!hasOwnProperty.call(validatedTagCache, tag)) {
+    if (__DEV__) {
+      var UnknownElement = (typeof HTMLGenericElement !== 'undefined') ? 
+        HTMLGenericElement : // IE8
+        HTMLUnknownElement;
+
+      function isKnownElement(tagName) {
+        return !(document.createElement(tagName) instanceof UnknownElement);
+      }
+
+      var message = 'The <%s> tag is unrecognized in this browser. If you ' +
+        'meant to render a React component, start its name with an uppercase ' +
+        'letter.';
+      warning(isKnownElement(tag), message, tag);
+    }
+
     invariant(VALID_TAG_REGEX.test(tag), 'Invalid tag: %s', tag);
     validatedTagCache[tag] = true;
   }
