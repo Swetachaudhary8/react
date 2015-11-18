@@ -286,6 +286,11 @@
           </li>
         
           <li>
+            <a href="/react/docs/webcomponents.html">Web Components</a>
+            
+          </li>
+        
+          <li>
             <a href="/react/docs/glossary.html">React (Virtual) DOM Terminology</a>
             
           </li>
@@ -821,8 +826,8 @@
 </span><span class="hll">  <span class="p">},</span>
 </span>  <span class="nx">render</span><span class="o">:</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">return</span> <span class="p">(</span>
-<span class="hll">      <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&quot;commentForm&quot;</span><span class="o">&gt;</span>
-</span><span class="hll">        <span class="o">&lt;</span><span class="nx">input</span>
+      <span class="o">&lt;</span><span class="nx">form</span> <span class="nx">className</span><span class="o">=</span><span class="s2">&quot;commentForm&quot;</span><span class="o">&gt;</span>
+<span class="hll">        <span class="o">&lt;</span><span class="nx">input</span>
 </span><span class="hll">          <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;text&quot;</span>
 </span><span class="hll">          <span class="nx">placeholder</span><span class="o">=</span><span class="s2">&quot;Your name&quot;</span>
 </span><span class="hll">          <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">author</span><span class="p">}</span>
@@ -834,7 +839,8 @@
 </span><span class="hll">          <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">text</span><span class="p">}</span>
 </span><span class="hll">          <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleTextChange</span><span class="p">}</span>
 </span><span class="hll">        <span class="o">/&gt;</span>
-</span>      <span class="o">&lt;</span><span class="err">/form&gt;</span>
+</span>        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;Post&quot;</span> <span class="o">/&gt;</span>
+      <span class="o">&lt;</span><span class="err">/form&gt;</span>
     <span class="p">);</span>
   <span class="p">}</span>
 <span class="p">});</span>
@@ -878,6 +884,7 @@
           <span class="nx">value</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">state</span><span class="p">.</span><span class="nx">text</span><span class="p">}</span>
           <span class="nx">onChange</span><span class="o">=</span><span class="p">{</span><span class="k">this</span><span class="p">.</span><span class="nx">handleTextChange</span><span class="p">}</span>
         <span class="o">/&gt;</span>
+        <span class="o">&lt;</span><span class="nx">input</span> <span class="nx">type</span><span class="o">=</span><span class="s2">&quot;submit&quot;</span> <span class="nx">value</span><span class="o">=</span><span class="s2">&quot;Post&quot;</span> <span class="o">/&gt;</span>
       <span class="o">&lt;</span><span class="err">/form&gt;</span>
     <span class="p">);</span>
   <span class="p">}</span>
